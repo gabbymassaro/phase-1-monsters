@@ -18,8 +18,8 @@ fetch(`http://localhost:3000/monsters`)
       const h4 = document.createElement('h4')
       const p = document.createElement('p')
       h2.textContent = item.name
-      h4.textContent = item.age
-      p.textContent = item.description
+      h4.textContent = `Age: ${item.age}`
+      p.textContent = `Bio: ${item.description}`
       monsterBios.appendChild(h2)
       monsterBios.appendChild(h4)
       monsterBios.appendChild(p)
